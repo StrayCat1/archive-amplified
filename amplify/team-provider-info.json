@@ -46,6 +46,11 @@
       "StackName": "amplify-archiveamplified-prod-125907",
       "StackId": "arn:aws:cloudformation:us-east-2:798276211865:stack/amplify-archiveamplified-prod-125907/84e9fbe0-2e8f-11eb-ac32-0aab72912b98",
       "AmplifyAppId": "d320du9ybouikl"
+    },
+    "categories": {
+      "auth": {
+        "archiveamplified2875733f": {}
+      }
     }
   }
 }
