@@ -5,6 +5,9 @@
       "providerPlugin": "awscloudformation",
       "dependsOn": [],
       "customAuth": false
+    },
+    "archiveamplified5510db04": {
+      "dependsOn": []
     }
   }
 }

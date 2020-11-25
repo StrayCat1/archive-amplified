@@ -13,7 +13,9 @@
     },
     "categories": {
       "auth": {
-        "archiveamplified5510db04": {}
+        "archiveamplified5510db04": {
+          "hostedUIProviderCreds": "[]"
+        }
       }
     }
   },
