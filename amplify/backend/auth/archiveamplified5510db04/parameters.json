@@ -1,6 +1,6 @@
 {
     "identityPoolName": "archiveamplified5510db04_identitypool_5510db04",
-    "allowUnauthenticatedIdentities": false,
+    "allowUnauthenticatedIdentities": true,
     "resourceNameTruncated": "archiv5510db04",
     "userPoolName": "archiveamplified5510db04_userpool_5510db04",
     "autoVerifiedAttributes": [
@@ -21,7 +21,7 @@
         "email"
     ],
     "userpoolClientGenerateSecret": true,
-    "userpoolClientRefreshTokenValidity": 30,
+    "userpoolClientRefreshTokenValidity": "1",
     "userpoolClientWriteAttributes": [
         "email"
     ],
@@ -29,7 +29,7 @@
         "email"
     ],
     "userpoolClientLambdaRole": "archiv5510db04_userpoolclient_lambda_role",
-    "userpoolClientSetAttributes": false,
+    "userpoolClientSetAttributes": true,
     "sharedId": "5510db04",
     "resourceName": "archiveamplified5510db04",
     "authSelections": "identityPoolAndUserPool",
@@ -45,7 +45,7 @@
             "Arn"
         ]
     },
-    "useDefault": "defaultSocial",
+    "useDefault": "manual",
     "usernameAttributes": [
         "email"
     ],
@@ -53,8 +53,17 @@
     "serviceName": "Cognito",
     "dependsOn": [],
     "hostedUI": true,
-    "hostedUIDomainName": "archiveamplified08194b93-08194b93",
+    "hostedUIDomainName": "googleidp",
     "authProvidersUserPool": [],
     "hostedUIProviderMeta": "[]",
-    "oAuthMetadata": "{\"AllowedOAuthFlows\":[\"code\"],\"AllowedOAuthScopes\":[\"phone\",\"email\",\"openid\",\"profile\",\"aws.cognito.signin.user.admin\"],\"CallbackURLs\":[\"http://localhost:3000/\"],\"LogoutURLs\":[\"http://localhost:3000/logout/\"]}"
+    "thirdPartyAuth": true,
+    "authProviders": [],
+    "userPoolGroups": false,
+    "adminQueries": true,
+    "triggers": "{}",
+    "oAuthMetadata": "{\"AllowedOAuthFlows\":[\"code\"],\"AllowedOAuthScopes\":[\"phone\",\"email\",\"openid\",\"profile\",\"aws.cognito.signin.user.admin\"],\"CallbackURLs\":[\"http://localhost:3000/\",\"https://googleidp.d320du9ybouikl.amplifyapp.com/\"],\"LogoutURLs\":[\"http://localhost:3000/logout/\",\"https://googleidp.d320du9ybouikl.amplifyapp.com/logout/\"]}",
+    "parentStack": {
+        "Ref": "AWS::StackId"
+    },
+    "permissions": []
 }
